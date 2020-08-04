@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #010001;
+  color: #FFFFFF;
+  margin: 0;
+  padding-top: 53px;
+  font-family: "Robot",
+    sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1230px;
+  margin: auto;
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item-link {
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.secondary-link {
+  color: #808080;
+}
