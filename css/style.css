@@ -7,7 +7,7 @@ body {
   color: #FFFFFF;
   margin: 0;
   padding-top: 53px;
-  font-family: "Robot",
+  font-family: 'Roboto',
     sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -36,6 +36,94 @@ body {
   margin: 0 10px;
 }
 
-.secondary-link {
+.secondary-menu .item-link {
   color: #808080;
+}
+
+.item:last-child .item-link {
+  margin-right: 0;
+}
+
+.item:first-child .item-link {
+  margin-left: 0;
+}
+
+.main {
+  text-align: center;
+  padding: 120px 0 26px;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 75px;
+  margin: 0;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: lowercase;
+  max-width: 268px;
+  margin: 26px auto;
+}
+
+.description:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  background-color: #FFFFFF;
+  margin: 26px auto;
+}
+
+.video {
+  width: 90%;
+  max-width: 1230px;
+  margin: auto;
+  height: 750px;
+}
+
+.features {
+  position: relative;
+  width: 90%;
+  max-width: 1230px;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.features-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.table {
+  margin-bottom: 207px;
+}
+
+.table-column {
+  width: 300px;
+  padding: 0 0 11px;
+  font-size: 18px;
+  line-height: 179.69%;
+}
+
+.table-column span {
+  color: #B2B0B2;
+}
+
+.features-text {
+  max-width: 490px;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.rocket {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  z-index: 99;
 }
