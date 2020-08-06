@@ -13,12 +13,15 @@ body {
   font-weight: normal;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
+.container {
   width: 90%;
   max-width: 1230px;
   margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .list {
@@ -78,17 +81,11 @@ body {
 }
 
 .video {
-  width: 90%;
-  max-width: 1230px;
-  margin: auto;
   height: 750px;
 }
 
 .features {
   position: relative;
-  width: 90%;
-  max-width: 1230px;
-  margin: auto;
   padding: 100px 0;
 }
 
@@ -123,7 +120,119 @@ body {
 
 .rocket {
   position: absolute;
+  max-width: 300px;
   top: 100px;
   right: 0;
   z-index: 99;
+}
+
+.footer {
+  padding: 130px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav {
+  margin: 43px 0 28px;
+}
+
+.footer-nav .item-link {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer-text,
+.footer-link {
+  font-size: 18px;
+  line-height: 21px;
+  color: #808080;
+  text-decoration: none;
+  margin: 0 0 30px;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  min-width: 260px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #FFFFFF;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .table-column {
+    width: 230px;
+  }
+
+  .rocket {
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .logo {
+    margin-bottom: 20px;
+  }
+
+  .header .main-nav {
+    margin-bottom: 20px;
+  }
+
+  .rocket {
+    max-width: 160px;
+  }
+
+  .video {
+    height: 570px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding-top: 70px;
+  }
+  .video {
+    height: 320px;
+  }
+
+  .rocket {
+    position: static;
+    top: 0;
+    margin-bottom: 30px;
+  }
+
+  .table {
+    margin-bottom: 0;
+  }
+
+  .table-column {
+    font-size: 11px;
+    width: 180px;
+  }
+
+  .footer {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .footer-nav .list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-nav .item {
+    margin-bottom: 10px;
+  }
+
+
 }
